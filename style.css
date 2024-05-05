@@ -2,14 +2,14 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #cfd1e9;
+  background-color: #bbbedd;
 }
-
+/* HEADER SECTION */
 header {
-  background-color:#a8acdb;
+  background-color:#9298ce;
   padding: 20px;
 }
-
+/* NAVIGATION SECTION */
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,17 +18,16 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff; /* White text in header */
+  color: #fff;
   padding: 10px 20px;
 }
 
 
 nav a:active {
- /* Slightly increase size of clicked link */
-  color: #000; /* Change text color to black for active link */
-  font-weight: bold; /* Make clicked link text bold */
+  color: #000; 
+  font-weight: bold;
 }
-
+/* SEARCH  */
 .search-container {
   display: flex;
   align-items: center;
@@ -44,15 +43,12 @@ nav a:active {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 0 5px; /* Add padding around the search icon */
+  padding: 0 5px;
 }
 
 .search-container button svg {
-  fill: #fff; /* White search icon color */
+  fill: #fff; 
 }
-
-/* Additional styling for hover effects, animations, etc. can be further customized */
-
 
 .hero {
   position: relative;
@@ -68,7 +64,7 @@ nav a:active {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #2b024a;
 }
 
 .hero h1 {
@@ -87,7 +83,9 @@ nav a:active {
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #070378;
 }
 
 .hero a {
@@ -100,9 +98,9 @@ nav a:active {
 }
 
 .hero a:hover {
-  background-color: #e8e8e8; /* Light gray hover effect */
+  background-color: #e8e8e8;
 }
-
+/* COLLECTIONS SECTION */
 .collections {
   text-align: center;
   padding: 50px 0;
@@ -142,7 +140,7 @@ nav a:active {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-
+/* 
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -170,7 +168,7 @@ nav a:active {
 
 .product-card p {
   font-weight: bold;
-}
+} */
 
 footer {
   text-align: center;
@@ -185,7 +183,7 @@ footer {
 }
 
 .social-icons a {
-  color: #5f1c1c;
+  color: #31013e;
   margin: 0 10px;
 }
 
@@ -211,4 +209,3 @@ footer {
         height: 2px;
     }
 
-/* Additional styling for hover effects, animations, etc. can be further customized */
