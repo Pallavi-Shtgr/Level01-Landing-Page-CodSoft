@@ -1,183 +1,192 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #b5b8dd; /* Light cream background */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b5b8dd;
+}
+
+header {
+  background-color: #58a2f1;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* White text in header */
+  padding: 10px 20px;
+}
+
+
+nav a:active {
+ /* Slightly increase size of clicked link */
+  color: #000; /* Change text color to black for active link */
+  font-weight: bold; /* Make clicked link text bold */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px; /* Add padding around the search icon */
+}
+
+.search-container button svg {
+  fill: #fff; /* White search icon color */
+}
+
+/* Additional styling for hover effects, animations, etc. can be further customized */
+
+
+.hero {
+  position: relative;
+  background-image: url("images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  
-  header {
-    background-color: #58a2f1; /* Blue header */
-    padding: 20px;
+  to {
+    opacity: 1;
   }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff; /* White text in header */
-    padding: 10px 20px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    color: #f0f0f0; /* Light gray hover effect for navigation links */
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-container input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .search-container button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .hero {
-    position: relative;
-    background-image: url("images/hero-background.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    animation: fade-in 2s ease-in-out;
-  }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-  }
-  
-  .hero a {
-    background-color: #fff; /* White button in hero section */
-    color: #007bff; /* Blue text in button */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .hero a:hover {
-    background-color: #e8e8e8; /* Light gray hover effect */
-  }
-  
-  .collections {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .collections h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-  
-  .collection-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .collection {
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .collection:hover {
-    transform: scale(1.05);
-  }
-  
-  .collection img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .collection h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .product-card {
-    width: 25%;
-    margin: 10px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .product-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .product-card p {
-    font-weight: bold;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icons a {
-    color: #333;
-    margin: 0 10px;
-  }
-  
-  /* Additional styling for hover effects, animations, etc. can be further customized */
-  
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.hero a {
+  background-color: #fff; /* White button in hero section */
+  color: #007bff; /* Blue text in button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero a:hover {
+  background-color: #e8e8e8; /* Light gray hover effect */
+}
+
+.collections {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.collections h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.collection-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collection:hover {
+  transform: scale(1.05);
+}
+
+.collection img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.collection h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 25%;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Additional styling for hover effects, animations, etc. can be further customized */
